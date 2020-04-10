@@ -4,8 +4,6 @@ _An intergalactic arcade pool simulation.  Featuring time attack, tournament and
 
 ![Space Pool Alpha](Docs/GitHubBanner.png)
 
-Game and Art by [Ben Chandler](https://twitter.com/ben_304). Music by Sebastian Pfaller. Ported to XAGE by [Dan Alexander](https://twitter.com/clarvalon).
-
 Programming and Game Design by [Steve McCrea](https://twitter.com/Kweepa).
 Portraits and victory screen by [AngelicCharon](https://www.adventuregamestudio.co.uk/forums/index.php?action=profile;u=9030).
 Music by [m0ds](https://www.adventuregamestudio.co.uk/forums/index.php?action=profile;u=16896).  
