@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GameID>Space Pool Alpha</GameID>
+  <UniversalScale>3</UniversalScale>
+  <GameScreenWidth>320</GameScreenWidth>
+  <GameScreenHeight>200</GameScreenHeight>
+  <Key>ChangeToYourOwnLongPassword</Key>
+  <UnitOfTimeInSeconds>0.025</UnitOfTimeInSeconds>
+  <NormalFont>Normal</NormalFont>
+  <SpeechFont>Speech</SpeechFont>
+  <AutoSelectSingleConversationOption>true</AutoSelectSingleConversationOption>
+  <BackgroundOffsetSpeed>10</BackgroundOffsetSpeed>
+  <GenerateUppercaseIntegralsInScripting>true</GenerateUppercaseIntegralsInScripting>
+  <ResetWalkableAreasOnRoomChange>true</ResetWalkableAreasOnRoomChange>
+  <UseHalfSizeCoords>false</UseHalfSizeCoords>
+  <UserSettings>
+    <FullScreen>false</FullScreen>
+    <CursorScrollSpeed>4.5</CursorScrollSpeed>
+    <Deadzone>0.05</Deadzone>
+    <TextReadingSpeed>22</TextReadingSpeed>
+    <MinimumTextDisplayTime>1.2</MinimumTextDisplayTime>
+    <DisplayStyle>MaintainAspectRatio</DisplayStyle>
+    <GlobalVolume>1</GlobalVolume>
+  </UserSettings>
+  <Namespace>SpacePoolAlpha</Namespace>
+  <CSharpProject>VisualStudio\SpacePoolAlpha.Script\</CSharpProject>
+  <VisualStudioFolder>VisualStudio</VisualStudioFolder>
+  <Platforms>
+    <PlatformSettings>
+      <Platform>[DESKTOP.SOLUTION.GUID]</Platform>
+      <GUID>FAFE9CC7-F3B8-40CA-BC2E-13E3689C020F</GUID>
+    </PlatformSettings>
+    <PlatformSettings>
+      <Platform>[DESKTOP.SOLUTION2.GUID]</Platform>
+      <GUID>5F4EBA84-71B7-4A2C-9C5B-A588974ACEE5</GUID>
+    </PlatformSettings>
+    <PlatformSettings>
+      <Platform>[DESKTOP.PROJECT.GUID]</Platform>
+      <GUID>491B817C-9D0D-4AB2-80BD-AC2FA3E54C21</GUID>
+    </PlatformSettings>
+    <PlatformSettings>
+      <Platform>[SCRIPT.PROJECT.GUID]</Platform>
+      <GUID>F5126A2B-EE59-414D-9691-A204658D661B</GUID>
+    </PlatformSettings>
+  </Platforms>
+</GameSettings>

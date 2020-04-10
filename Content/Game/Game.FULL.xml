@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="0.6">
+  <Images>
+    <GImage IntID="2063" ScriptID="Intro_0" RelativeFileName="Rooms\Intro\Intro_0.png" />
+    <GImage IntID="2064" ScriptID="Menu_0" RelativeFileName="Rooms\Menu\Menu_0.png" />
+    <GImage IntID="2065" ScriptID="Ship Designer_0" RelativeFileName="Rooms\ShipDesigner\Ship Designer_0.png" />
+    <GImage IntID="2066" ScriptID="Signature Recorder_0" RelativeFileName="Rooms\SignatureRecorder\Signature Recorder_0.png" />
+    <GImage IntID="2067" ScriptID="Time Attack_0" RelativeFileName="Rooms\TimeAttack\Time Attack_0.png" />
+    <GImage IntID="2068" ScriptID="Tournament_0" RelativeFileName="Rooms\Tournament\Tournament_0.png" />
+    <GImage IntID="2069" ScriptID="Tutorial_0" RelativeFileName="Rooms\Tutorial\Tutorial_0.png" />
+    <GImage IntID="2070" ScriptID="Two Player_0" RelativeFileName="Rooms\TwoPlayer\Two Player_0.png" />
+    <GImage IntID="2071" ScriptID="Victory_0" RelativeFileName="Rooms\Victory\Victory_0.png" />
+    <GImage IntID="1" ScriptID="spr00001" RelativeFileName="Sprites\Pilots\spr00001.png" />
+    <GImage IntID="2" ScriptID="spr00002" RelativeFileName="Sprites\Pilots\spr00002.png" />
+    <GImage IntID="3" ScriptID="spr00003" RelativeFileName="Sprites\Pilots\spr00003.png" />
+    <GImage IntID="4" ScriptID="spr00004" RelativeFileName="Sprites\Pilots\spr00004.png" />
+    <GImage IntID="5" ScriptID="spr00005" RelativeFileName="Sprites\Pilots\spr00005.png" />
+    <GImage IntID="6" ScriptID="spr00006" RelativeFileName="Sprites\Pilots\spr00006.png" />
+    <GImage IntID="7" ScriptID="spr00007" RelativeFileName="Sprites\Pilots\spr00007.png" />
+    <GImage IntID="8" ScriptID="spr00008" RelativeFileName="Sprites\Pilots\spr00008.png" />
+    <GImage IntID="9" ScriptID="spr00009" RelativeFileName="Sprites\Pilots\spr00009.png" />
+    <GImage IntID="10" ScriptID="spr00010" RelativeFileName="Sprites\Pilots\spr00010.png" />
+    <GImage IntID="11" ScriptID="spr00011" RelativeFileName="Sprites\Pilots\spr00011.png" />
+    <GImage IntID="12" ScriptID="spr00012" RelativeFileName="Sprites\Pilots\spr00012.png" />
+    <GImage IntID="13" ScriptID="spr00013" RelativeFileName="Sprites\Pilots\spr00013.png" />
+    <GImage IntID="15" ScriptID="spr00015" RelativeFileName="Sprites\Pilots\spr00015.png" />
+    <GImage IntID="16" ScriptID="spr00016" RelativeFileName="Sprites\Pilots\spr00016.png" />
+    <GImage IntID="17" ScriptID="spr00017" RelativeFileName="Sprites\Pilots\spr00017.png" />
+    <GImage IntID="18" ScriptID="spr00018" RelativeFileName="Sprites\Pilots\spr00018.png" />
+    <GImage IntID="19" ScriptID="spr00019" RelativeFileName="Sprites\Pilots\spr00019.png" />
+    <GImage IntID="20" ScriptID="spr00020" RelativeFileName="Sprites\Pilots\spr00020.png" />
+    <GImage IntID="21" ScriptID="spr00021" RelativeFileName="Sprites\Pilots\spr00021.png" />
+    <GImage IntID="22" ScriptID="spr00022" RelativeFileName="Sprites\Pilots\spr00022.png" />
+    <GImage IntID="24" ScriptID="spr00024" RelativeFileName="Sprites\Pilots\spr00024.png" />
+    <GImage IntID="0" ScriptID="spr00000" RelativeFileName="Sprites\spr00000.png" />
+    <GImage IntID="14" ScriptID="spr00014" RelativeFileName="Sprites\spr00014.png" />
+    <GImage IntID="23" ScriptID="spr00023" RelativeFileName="Sprites\spr00023.png" />
+    <GImage IntID="25" ScriptID="spr00025" RelativeFileName="Sprites\spr00025.png" />
+    <GImage IntID="2055" ScriptID="spr02055" RelativeFileName="Sprites\spr02055.png" />
+    <GImage IntID="2061" ScriptID="spr02061" RelativeFileName="Sprites\spr02061.png" />
+  </Images>
+  <Folders>
+    <GFolder RelativeFileName="Rooms\" />
+    <GFolder RelativeFileName="Sprites\" />
+  </Folders>
+  <GUIs>
+    <GUI IntID="0" ScriptID="gStatusline">
+      <X>0</X>
+      <Y>0</Y>
+      <Z>0</Z>
+      <Over>false</Over>
+      <Click>false</Click>
+      <Visibility>NormalButInitiallyOff</Visibility>
+      <PopupYPos>0</PopupYPos>
+      <NeverDrawBackground>false</NeverDrawBackground>
+      <Alpha>255</Alpha>
+      <Controls>
+        <GUIControl xsi:type="GUIControlLabel" IntID="0" ScriptID="gStatusLineLabel">
+          <X>0</X>
+          <Y>2</Y>
+          <Z>0</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>320</Width>
+          <Height>12</Height>
+          <Visible>true</Visible>
+          <Text>New Label</Text>
+          <FontID>Font 0</FontID>
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+          <TextAlignment>TopLeft</TextAlignment>
+          <TextColour R="84" G="252" B="84" A="255" />
+        </GUIControl>
+      </Controls>
+      <Width>320</Width>
+      <Height>13</Height>
+      <Visible>false</Visible>
+      <NormalFrame />
+      <BorderColour R="0" G="0" B="168" A="255" />
+      <BackgroundColour R="84" G="84" B="84" A="255" />
+      <Clickable>true</Clickable>
+    </GUI>
+    <GUI IntID="1" ScriptID="gRestartYN">
+      <X>0</X>
+      <Y>0</Y>
+      <Z>0</Z>
+      <Over>false</Over>
+      <Click>false</Click>
+      <Visibility>PopupModal</Visibility>
+      <PopupYPos>0</PopupYPos>
+      <NeverDrawBackground>false</NeverDrawBackground>
+      <Alpha>255</Alpha>
+      <Controls>
+        <GUIControl xsi:type="GUIControlLabel" IntID="0" ScriptID="Label4">
+          <X>4</X>
+          <Y>4</Y>
+          <Z>0</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>98</Width>
+          <Height>22</Height>
+          <Visible>true</Visible>
+          <Text>Are you sure you want to restart?</Text>
+          <FontID>Font 0</FontID>
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+          <TextAlignment>TopLeft</TextAlignment>
+          <TextColour R="0" G="0" B="0" A="255" />
+        </GUIControl>
+        <GUIControl xsi:type="GUIControlButton" IntID="1" ScriptID="btnRestartYes">
+          <X>6</X>
+          <Y>29</Y>
+          <Z>1</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>37</Width>
+          <Height>18</Height>
+          <Visible>true</Visible>
+          <Text>Yes</Text>
+          <FontID>Font 0</FontID>
+          <NormalFrame />
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+          <OverFrame />
+          <ClickFrame />
+          <ClickScript>btnRestartYes_OnClick</ClickScript>
+          <TextAlignment>MiddleCentre</TextAlignment>
+          <TextColour R="0" G="0" B="0" A="255" />
+          <ClipImage>false</ClipImage>
+        </GUIControl>
+        <GUIControl xsi:type="GUIControlButton" IntID="2" ScriptID="btnRestartNo">
+          <X>55</X>
+          <Y>29</Y>
+          <Z>2</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>37</Width>
+          <Height>18</Height>
+          <Visible>true</Visible>
+          <Text>No</Text>
+          <FontID>Font 0</FontID>
+          <NormalFrame />
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+          <OverFrame />
+          <ClickFrame />
+          <ClickScript>btnRestartNo_OnClick</ClickScript>
+          <TextAlignment>MiddleCentre</TextAlignment>
+          <TextColour R="0" G="0" B="0" A="255" />
+          <ClipImage>false</ClipImage>
+        </GUIControl>
+      </Controls>
+      <Width>105</Width>
+      <Height>53</Height>
+      <Visible>false</Visible>
+      <NormalFrame />
+      <BorderColour R="168" G="168" B="168" A="255" />
+      <BackgroundColour R="168" G="168" B="168" A="255" />
+      <Clickable>true</Clickable>
+    </GUI>
+    <GUI IntID="2" ScriptID="gSaveGame">
+      <X>35</X>
+      <Y>25</Y>
+      <Z>0</Z>
+      <Over>false</Over>
+      <Click>false</Click>
+      <Visibility>PopupModal</Visibility>
+      <PopupYPos>0</PopupYPos>
+      <NeverDrawBackground>false</NeverDrawBackground>
+      <Alpha>255</Alpha>
+      <Controls>
+        <GUIControl xsi:type="GUIControlLabel" IntID="0" ScriptID="Label5">
+          <X>20</X>
+          <Y>7</Y>
+          <Z>0</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>153</Width>
+          <Height>20</Height>
+          <Visible>true</Visible>
+          <Text>Please choose the name to save this game as:</Text>
+          <FontID>Font 0</FontID>
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+          <TextAlignment>TopLeft</TextAlignment>
+          <TextColour R="0" G="0" B="0" A="255" />
+        </GUIControl>
+        <GUIControl xsi:type="GUIControlTextBox" IntID="1" ScriptID="txtNewSaveName">
+          <X>20</X>
+          <Y>29</Y>
+          <Z>0</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>149</Width>
+          <Height>13</Height>
+          <Visible>false</Visible>
+          <Text>System.Object</Text>
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+        </GUIControl>
+        <GUIControl xsi:type="GUIControlButton" IntID="2" ScriptID="btnSaveGame">
+          <X>182</X>
+          <Y>29</Y>
+          <Z>2</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>56</Width>
+          <Height>13</Height>
+          <Visible>true</Visible>
+          <Text>Save</Text>
+          <FontID>Font 0</FontID>
+          <NormalFrame />
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+          <OverFrame />
+          <ClickFrame />
+          <ClickScript>btnSaveGame_OnClick</ClickScript>
+          <TextAlignment>TopCentre</TextAlignment>
+          <TextColour R="0" G="0" B="0" A="255" />
+          <ClipImage>false</ClipImage>
+        </GUIControl>
+        <GUIControl xsi:type="GUIControlButton" IntID="3" ScriptID="btnCancelSave">
+          <X>182</X>
+          <Y>65</Y>
+          <Z>3</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>56</Width>
+          <Height>13</Height>
+          <Visible>true</Visible>
+          <Text>Cancel</Text>
+          <FontID>Font 0</FontID>
+          <NormalFrame />
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+          <OverFrame />
+          <ClickFrame />
+          <ClickScript>btnCancelSave_OnClick</ClickScript>
+          <TextAlignment>TopCentre</TextAlignment>
+          <TextColour R="0" G="0" B="0" A="255" />
+          <ClipImage>false</ClipImage>
+        </GUIControl>
+        <GUIControl xsi:type="GUIControlListBox" IntID="4" ScriptID="lstSaveGamesList">
+          <X>20</X>
+          <Y>45</Y>
+          <Z>0</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>148</Width>
+          <Height>96</Height>
+          <Visible>false</Visible>
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+        </GUIControl>
+        <GUIControl xsi:type="GUIControlButton" IntID="5" ScriptID="btnDeleteSave">
+          <X>182</X>
+          <Y>47</Y>
+          <Z>5</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>56</Width>
+          <Height>13</Height>
+          <Visible>true</Visible>
+          <Text>Delete</Text>
+          <FontID>Font 0</FontID>
+          <NormalFrame />
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+          <OverFrame />
+          <ClickFrame />
+          <ClickScript>btnDeleteSave_OnClick</ClickScript>
+          <TextAlignment>TopCentre</TextAlignment>
+          <TextColour R="0" G="0" B="0" A="255" />
+          <ClipImage>false</ClipImage>
+        </GUIControl>
+      </Controls>
+      <Width>250</Width>
+      <Height>150</Height>
+      <Visible>false</Visible>
+      <NormalFrame />
+      <BorderColour R="84" G="84" B="84" A="255" />
+      <BackgroundColour R="168" G="168" B="168" A="255" />
+      <Clickable>true</Clickable>
+    </GUI>
+    <GUI IntID="3" ScriptID="gRestoreGame">
+      <X>35</X>
+      <Y>25</Y>
+      <Z>0</Z>
+      <Over>false</Over>
+      <Click>false</Click>
+      <Visibility>PopupModal</Visibility>
+      <PopupYPos>0</PopupYPos>
+      <NeverDrawBackground>false</NeverDrawBackground>
+      <Alpha>255</Alpha>
+      <Controls>
+        <GUIControl xsi:type="GUIControlLabel" IntID="0" ScriptID="Label52">
+          <X>20</X>
+          <Y>7</Y>
+          <Z>0</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>153</Width>
+          <Height>20</Height>
+          <Visible>true</Visible>
+          <Text>Please choose the game that you want to restore:</Text>
+          <FontID>Font 0</FontID>
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+          <TextAlignment>TopLeft</TextAlignment>
+          <TextColour R="0" G="0" B="0" A="255" />
+        </GUIControl>
+        <GUIControl xsi:type="GUIControlButton" IntID="1" ScriptID="btnRestoreGame">
+          <X>182</X>
+          <Y>29</Y>
+          <Z>1</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>56</Width>
+          <Height>13</Height>
+          <Visible>true</Visible>
+          <Text>Restore</Text>
+          <FontID>Font 0</FontID>
+          <NormalFrame />
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+          <OverFrame />
+          <ClickFrame />
+          <ClickScript>btnRestoreGame_OnClick</ClickScript>
+          <TextAlignment>TopCentre</TextAlignment>
+          <TextColour R="0" G="0" B="0" A="255" />
+          <ClipImage>false</ClipImage>
+        </GUIControl>
+        <GUIControl xsi:type="GUIControlButton" IntID="2" ScriptID="btnCancelRestore">
+          <X>182</X>
+          <Y>46</Y>
+          <Z>2</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>56</Width>
+          <Height>13</Height>
+          <Visible>true</Visible>
+          <Text>Cancel</Text>
+          <FontID>Font 0</FontID>
+          <NormalFrame />
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+          <OverFrame />
+          <ClickFrame />
+          <ClickScript>btnCancelRestore_OnClick</ClickScript>
+          <TextAlignment>TopCentre</TextAlignment>
+          <TextColour R="0" G="0" B="0" A="255" />
+          <ClipImage>false</ClipImage>
+        </GUIControl>
+        <GUIControl xsi:type="GUIControlListBox" IntID="3" ScriptID="lstRestoreGamesList">
+          <X>20</X>
+          <Y>30</Y>
+          <Z>0</Z>
+          <Over>false</Over>
+          <Click>false</Click>
+          <Visibility>Normal</Visibility>
+          <PopupYPos>0</PopupYPos>
+          <NeverDrawBackground>false</NeverDrawBackground>
+          <Alpha>255</Alpha>
+          <Controls />
+          <Width>153</Width>
+          <Height>114</Height>
+          <Visible>false</Visible>
+          <BorderColour R="0" G="0" B="0" A="0" />
+          <BackgroundColour R="0" G="0" B="0" A="0" />
+          <Clickable>false</Clickable>
+          <Enabled>false</Enabled>
+        </GUIControl>
+      </Controls>
+      <Width>250</Width>
+      <Height>150</Height>
+      <Visible>false</Visible>
+      <NormalFrame />
+      <BorderColour R="84" G="84" B="84" A="255" />
+      <BackgroundColour R="168" G="168" B="168" A="255" />
+      <Clickable>true</Clickable>
+    </GUI>
+  </GUIs>
+  <StartScript>game_start</StartScript>
+  <Room ScriptID="GLOBAL" IntID="0" Frame="0">
+    <BackgroundImageIDs />
+    <BackgroundAnimationDelay>0</BackgroundAnimationDelay>
+    <OnEveryFrame>repeatedly_execute</OnEveryFrame>
+    <OnEveryFrameAlways>repeatedly_execute_always</OnEveryFrameAlways>
+    <OnEveryFrameAlwaysLate>late_repeatedly_execute_always</OnEveryFrameAlwaysLate>
+    <OnMouseClick>on_mouse_click</OnMouseClick>
+    <OnKeyPress>on_key_press</OnKeyPress>
+    <LeftEdgeX>0</LeftEdgeX>
+    <RightEdgeX>0</RightEdgeX>
+    <TopEdgeY>0</TopEdgeY>
+    <BottomEdgeY>0</BottomEdgeY>
+    <ShowPlayerCharacter>true</ShowPlayerCharacter>
+    <SuppressPathfinding>false</SuppressPathfinding>
+    <Script ScriptID="game_start" ParametersSignature="None" ReturnType="void" />
+    <Script ScriptID="repeatedly_execute" ParametersSignature="None" ReturnType="void" />
+    <Script ScriptID="repeatedly_execute_always" ParametersSignature="None" ReturnType="void" />
+    <Script ScriptID="on_key_press" ParametersSignature="KeyCode" ReturnType="void" />
+    <Script ScriptID="on_mouse_click" ParametersSignature="MouseButton" ReturnType="void" />
+    <Script ScriptID="cEgo_Look" ParametersSignature="None" />
+    <Script ScriptID="cEgo_Interact" ParametersSignature="None" />
+    <Script ScriptID="cEgo_Talk" ParametersSignature="None" />
+    <Script ScriptID="btnRestartYes_OnClick" ParametersSignature="GuiControlMouseButton" />
+    <Script ScriptID="btnRestartNo_OnClick" ParametersSignature="GuiControlMouseButton" />
+    <Script ScriptID="btnCancelSave_OnClick" ParametersSignature="GuiControlMouseButton" />
+    <Script ScriptID="btnSaveGame_OnClick" ParametersSignature="GuiControlMouseButton" />
+    <Script ScriptID="btnCancelRestore_OnClick" ParametersSignature="GuiControlMouseButton" />
+    <Script ScriptID="btnRestoreGame_OnClick" ParametersSignature="GuiControlMouseButton" />
+    <Script ScriptID="btnDeleteSave_OnClick" ParametersSignature="GuiControlMouseButton" />
+    <Width>0</Width>
+    <Height>0</Height>
+  </Room>
+  <Room ScriptID="Tutorial" IntID="1" Frame="0">
+    <BackgroundImageIDs>
+      <string>Tutorial_0</string>
+    </BackgroundImageIDs>
+    <OnEnter>room_Load</OnEnter>
+    <BackgroundAnimationDelay>5</BackgroundAnimationDelay>
+    <OnEveryFrame>room_RepExec</OnEveryFrame>
+    <OnEveryFrameAlways>repeatedly_execute_always</OnEveryFrameAlways>
+    <OnKeyPress>on_key_press</OnKeyPress>
+    <LeftEdgeX>0</LeftEdgeX>
+    <RightEdgeX>317</RightEdgeX>
+    <TopEdgeY>40</TopEdgeY>
+    <BottomEdgeY>198</BottomEdgeY>
+    <ShowPlayerCharacter>false</ShowPlayerCharacter>
+    <SuppressPathfinding>false</SuppressPathfinding>
+    <Script ScriptID="room_Load" ParametersSignature="None" />
+    <Script ScriptID="repeatedly_execute_always" ParametersSignature="None" ReturnType="void" />
+    <Script ScriptID="on_key_press" ParametersSignature="KeyCode" ReturnType="void" />
+    <Script ScriptID="room_RepExec" ParametersSignature="None" />
+    <Polygon ScriptID="WalkableArea1" BaseLine="0" IntID="1" ScalingLevel="100" MinScalingLevel="100" MaxScalingLevel="100" UseContinuousScaling="false">
+      <Enabled>true</Enabled>
+      <Outers>
+        <VectorList String="0,100|0,200|160,200|320,200|320,100|320,0|160,0|0,0|0,100" />
+      </Outers>
+      <Holes />
+    </Polygon>
+    <Width>320</Width>
+    <Height>200</Height>
+  </Room>
+  <Room ScriptID="Menu" IntID="2" Frame="0">
+    <BackgroundImageIDs>
+      <string>Menu_0</string>
+    </BackgroundImageIDs>
+    <OnEnter>room_Load</OnEnter>
+    <BackgroundAnimationDelay>5</BackgroundAnimationDelay>
+    <OnEveryFrame>room_RepExec</OnEveryFrame>
+    <OnEveryFrameAlways>repeatedly_execute_always</OnEveryFrameAlways>
+    <OnKeyPress>on_key_press</OnKeyPress>
+    <LeftEdgeX>0</LeftEdgeX>
+    <RightEdgeX>317</RightEdgeX>
+    <TopEdgeY>40</TopEdgeY>
+    <BottomEdgeY>198</BottomEdgeY>
+    <ShowPlayerCharacter>false</ShowPlayerCharacter>
+    <SuppressPathfinding>false</SuppressPathfinding>
+    <Script ScriptID="room_Load" ParametersSignature="None" />
+    <Script ScriptID="repeatedly_execute_always" ParametersSignature="None" ReturnType="void" />
+    <Script ScriptID="on_key_press" ParametersSignature="KeyCode" ReturnType="void" />
+    <Script ScriptID="room_RepExec" ParametersSignature="None" />
+    <Width>320</Width>
+    <Height>200</Height>
+  </Room>
+  <Room ScriptID="TimeAttack" IntID="3" Frame="0">
+    <BackgroundImageIDs>
+      <string>Time Attack_0</string>
+    </BackgroundImageIDs>
+    <OnEnter>room_Load</OnEnter>
+    <BackgroundAnimationDelay>5</BackgroundAnimationDelay>
+    <OnEveryFrame>room_RepExec</OnEveryFrame>
+    <OnEveryFrameAlways>repeatedly_execute_always</OnEveryFrameAlways>
+    <OnKeyPress>on_key_press</OnKeyPress>
+    <LeftEdgeX>0</LeftEdgeX>
+    <RightEdgeX>317</RightEdgeX>
+    <TopEdgeY>40</TopEdgeY>
+    <BottomEdgeY>198</BottomEdgeY>
+    <ShowPlayerCharacter>false</ShowPlayerCharacter>
+    <SuppressPathfinding>false</SuppressPathfinding>
+    <Script ScriptID="room_Load" ParametersSignature="None" />
+    <Script ScriptID="repeatedly_execute_always" ParametersSignature="None" ReturnType="void" />
+    <Script ScriptID="on_key_press" ParametersSignature="KeyCode" ReturnType="void" />
+    <Script ScriptID="room_RepExec" ParametersSignature="None" />
+    <Width>320</Width>
+    <Height>200</Height>
+  </Room>
+  <Room ScriptID="TwoPlayer" IntID="4" Frame="0">
+    <BackgroundImageIDs>
+      <string>Two Player_0</string>
+    </BackgroundImageIDs>
+    <OnEnter>room_Load</OnEnter>
+    <BackgroundAnimationDelay>5</BackgroundAnimationDelay>
+    <OnEveryFrame>room_RepExec</OnEveryFrame>
+    <OnEveryFrameAlways>repeatedly_execute_always</OnEveryFrameAlways>
+    <OnKeyPress>on_key_press</OnKeyPress>
+    <LeftEdgeX>0</LeftEdgeX>
+    <RightEdgeX>317</RightEdgeX>
+    <TopEdgeY>40</TopEdgeY>
+    <BottomEdgeY>198</BottomEdgeY>
+    <ShowPlayerCharacter>false</ShowPlayerCharacter>
+    <SuppressPathfinding>false</SuppressPathfinding>
+    <Script ScriptID="room_Load" ParametersSignature="None" />
+    <Script ScriptID="repeatedly_execute_always" ParametersSignature="None" ReturnType="void" />
+    <Script ScriptID="on_key_press" ParametersSignature="KeyCode" ReturnType="void" />
+    <Script ScriptID="room_RepExec" ParametersSignature="None" />
+    <Width>320</Width>
+    <Height>200</Height>
+  </Room>
+  <Room ScriptID="Tournament" IntID="5" Frame="0">
+    <BackgroundImageIDs>
+      <string>Tournament_0</string>
+    </BackgroundImageIDs>
+    <OnEnter>room_Load</OnEnter>
+    <BackgroundAnimationDelay>5</BackgroundAnimationDelay>
+    <OnEveryFrame>room_RepExec</OnEveryFrame>
+    <OnEveryFrameAlways>repeatedly_execute_always</OnEveryFrameAlways>
+    <OnKeyPress>on_key_press</OnKeyPress>
+    <LeftEdgeX>0</LeftEdgeX>
+    <RightEdgeX>317</RightEdgeX>
+    <TopEdgeY>40</TopEdgeY>
+    <BottomEdgeY>198</BottomEdgeY>
+    <ShowPlayerCharacter>false</ShowPlayerCharacter>
+    <SuppressPathfinding>false</SuppressPathfinding>
+    <Script ScriptID="room_Load" ParametersSignature="None" />
+    <Script ScriptID="repeatedly_execute_always" ParametersSignature="None" ReturnType="void" />
+    <Script ScriptID="on_key_press" ParametersSignature="KeyCode" ReturnType="void" />
+    <Script ScriptID="room_RepExec" ParametersSignature="None" />
+    <Width>320</Width>
+    <Height>200</Height>
+  </Room>
+  <Room ScriptID="ShipDesigner" IntID="6" Frame="0">
+    <BackgroundImageIDs>
+      <string>Ship Designer_0</string>
+    </BackgroundImageIDs>
+    <OnEnter>room_Load</OnEnter>
+    <BackgroundAnimationDelay>5</BackgroundAnimationDelay>
+    <OnEveryFrameAlways>repeatedly_execute_always</OnEveryFrameAlways>
+    <OnMouseClick>on_mouse_click</OnMouseClick>
+    <OnKeyPress>on_key_press</OnKeyPress>
+    <LeftEdgeX>0</LeftEdgeX>
+    <RightEdgeX>317</RightEdgeX>
+    <TopEdgeY>40</TopEdgeY>
+    <BottomEdgeY>198</BottomEdgeY>
+    <ShowPlayerCharacter>false</ShowPlayerCharacter>
+    <SuppressPathfinding>false</SuppressPathfinding>
+    <Script ScriptID="room_Load" ParametersSignature="None" />
+    <Script ScriptID="repeatedly_execute_always" ParametersSignature="None" ReturnType="void" />
+    <Script ScriptID="on_key_press" ParametersSignature="KeyCode" ReturnType="void" />
+    <Script ScriptID="on_mouse_click" ParametersSignature="MouseButton" ReturnType="void" />
+    <Width>320</Width>
+    <Height>200</Height>
+  </Room>
+  <Room ScriptID="SignatureRecorder" IntID="7" Frame="0">
+    <BackgroundImageIDs>
+      <string>Signature Recorder_0</string>
+    </BackgroundImageIDs>
+    <OnEnter>room_Load</OnEnter>
+    <BackgroundAnimationDelay>5</BackgroundAnimationDelay>
+    <OnEveryFrameAlways>repeatedly_execute_always</OnEveryFrameAlways>
+    <OnKeyPress>on_key_press</OnKeyPress>
+    <LeftEdgeX>0</LeftEdgeX>
+    <RightEdgeX>317</RightEdgeX>
+    <TopEdgeY>40</TopEdgeY>
+    <BottomEdgeY>198</BottomEdgeY>
+    <ShowPlayerCharacter>false</ShowPlayerCharacter>
+    <SuppressPathfinding>false</SuppressPathfinding>
+    <Script ScriptID="room_Load" ParametersSignature="None" />
+    <Script ScriptID="repeatedly_execute_always" ParametersSignature="None" ReturnType="void" />
+    <Script ScriptID="on_key_press" ParametersSignature="KeyCode" ReturnType="void" />
+    <Width>320</Width>
+    <Height>200</Height>
+  </Room>
+  <Room ScriptID="Intro" IntID="8" Frame="0">
+    <BackgroundImageIDs>
+      <string>Intro_0</string>
+    </BackgroundImageIDs>
+    <OnEnter>room_Load</OnEnter>
+    <BackgroundAnimationDelay>5</BackgroundAnimationDelay>
+    <OnEveryFrame>room_RepExec</OnEveryFrame>
+    <OnEveryFrameAlways>repeatedly_execute_always</OnEveryFrameAlways>
+    <OnKeyPress>on_key_press</OnKeyPress>
+    <LeftEdgeX>0</LeftEdgeX>
+    <RightEdgeX>317</RightEdgeX>
+    <TopEdgeY>40</TopEdgeY>
+    <BottomEdgeY>198</BottomEdgeY>
+    <ShowPlayerCharacter>false</ShowPlayerCharacter>
+    <SuppressPathfinding>false</SuppressPathfinding>
+    <Script ScriptID="room_Load" ParametersSignature="None" />
+    <Script ScriptID="repeatedly_execute_always" ParametersSignature="None" ReturnType="void" />
+    <Script ScriptID="on_key_press" ParametersSignature="KeyCode" ReturnType="void" />
+    <Script ScriptID="room_RepExec" ParametersSignature="None" />
+    <Object IntID="0" ScriptID="FadeOutObj" Name="" Enabled="true" Scale="0" X1="0" Y1="0" X2="0" Y2="0" SelectionType="PerPixel">
+      <Position X="0" Y="200" />
+      <Baseline>0</Baseline>
+      <Visible>true</Visible>
+      <ImageID>spr00025</ImageID>
+      <Colour R="255" G="255" B="255" A="255" />
+      <UseRoomAreaLighting>false</UseRoomAreaLighting>
+      <UseRoomAreaScaling>false</UseRoomAreaScaling>
+      <Clickable>true</Clickable>
+    </Object>
+    <Width>320</Width>
+    <Height>200</Height>
+  </Room>
+  <Room ScriptID="Victory" IntID="9" Frame="0">
+    <BackgroundImageIDs>
+      <string>Victory_0</string>
+    </BackgroundImageIDs>
+    <OnEnter>room_Load</OnEnter>
+    <BackgroundAnimationDelay>5</BackgroundAnimationDelay>
+    <OnEveryFrame>room_RepExec</OnEveryFrame>
+    <OnKeyPress>on_key_press</OnKeyPress>
+    <LeftEdgeX>0</LeftEdgeX>
+    <RightEdgeX>317</RightEdgeX>
+    <TopEdgeY>40</TopEdgeY>
+    <BottomEdgeY>198</BottomEdgeY>
+    <ShowPlayerCharacter>false</ShowPlayerCharacter>
+    <SuppressPathfinding>false</SuppressPathfinding>
+    <Script ScriptID="room_Load" ParametersSignature="None" />
+    <Script ScriptID="room_RepExec" ParametersSignature="None" />
+    <Script ScriptID="on_key_press" ParametersSignature="KeyCode" ReturnType="void" />
+    <Width>320</Width>
+    <Height>200</Height>
+  </Room>
+  <View ScriptID="VIEW1" IntID="1">
+    <AnimUp>animVIEW13Up</AnimUp>
+    <StillImageDown>spr00000</StillImageDown>
+    <StillImageLeft>spr00000</StillImageLeft>
+    <StillImageRight>spr00000</StillImageRight>
+    <StillFlippedDown>false</StillFlippedDown>
+    <StillFlippedLeft>false</StillFlippedLeft>
+    <StillFlippedRight>false</StillFlippedRight>
+    <StillFlippedUp>false</StillFlippedUp>
+    <StillFlippedDownRight>false</StillFlippedDownRight>
+    <StillFlippedUpRight>false</StillFlippedUpRight>
+    <StillFlippedUpLeft>false</StillFlippedUpLeft>
+    <StillFlippedDownLeft>false</StillFlippedDownLeft>
+    <ViewAnims>
+      <ViewAnim customAnimID="animVIEW10" LoopNo="0" />
+      <ViewAnim customAnimID="animVIEW11" LoopNo="1" />
+      <ViewAnim customAnimID="animVIEW12" LoopNo="2" />
+      <ViewAnim customAnimID="animVIEW13" LoopNo="3" />
+    </ViewAnims>
+  </View>
+  <Anim ScriptID="animVIEW10">
+    <Step ImageID="spr00000" PauseLength="0" SoundScriptID="" Flip="false" />
+  </Anim>
+  <Anim ScriptID="animVIEW10Down">
+    <Step ImageID="spr00000" PauseLength="0" SoundScriptID="" Flip="false" />
+  </Anim>
+  <Anim ScriptID="animVIEW11">
+    <Step ImageID="spr00000" PauseLength="0" SoundScriptID="" Flip="false" />
+  </Anim>
+  <Anim ScriptID="animVIEW11Left">
+    <Step ImageID="spr00000" PauseLength="0" SoundScriptID="" Flip="false" />
+  </Anim>
+  <Anim ScriptID="animVIEW12">
+    <Step ImageID="spr00000" PauseLength="0" SoundScriptID="" Flip="false" />
+  </Anim>
+  <Anim ScriptID="animVIEW12Right">
+    <Step ImageID="spr00000" PauseLength="0" SoundScriptID="" Flip="false" />
+  </Anim>
+  <Anim ScriptID="animVIEW13" />
+  <Anim ScriptID="animVIEW13Up" />
+  <Cursor ScriptID="eModeWalkto" Name="Walk to" HotSpotX="0" HotSpotY="0" ImageID="spr02061" StandardMode="true" Enabled="true" />
+  <Cursor ScriptID="eModeLookat" Name="Look at" HotSpotX="0" HotSpotY="0" ImageID="spr02061" StandardMode="true" Enabled="true" />
+  <Cursor ScriptID="eModeInteract" Name="Interact" HotSpotX="0" HotSpotY="0" ImageID="spr02061" StandardMode="true" Enabled="true" />
+  <Cursor ScriptID="eModeTalkto" Name="Talk to" HotSpotX="0" HotSpotY="0" ImageID="spr02061" StandardMode="true" Enabled="true" />
+  <Cursor ScriptID="eModeUseinv" Name="Use inv" HotSpotX="0" HotSpotY="0" ImageID="spr02061" StandardMode="false" Enabled="true" />
+  <Cursor ScriptID="eModePickup" Name="Pick up" HotSpotX="0" HotSpotY="0" ImageID="spr02061" StandardMode="false" Enabled="true" />
+  <Cursor ScriptID="eModePointer" Name="Pointer" HotSpotX="0" HotSpotY="0" ImageID="spr02061" StandardMode="false" Enabled="true" />
+  <Cursor ScriptID="eModeWait" Name="Wait" HotSpotX="8" HotSpotY="8" ImageID="spr02055" StandardMode="false" Enabled="true" />
+  <CustomPropertiesSchema>
+    <Items />
+  </CustomPropertiesSchema>
+  <Character IntID="0" ScriptID="cEgo" Name="ROGER" Enabled="true" Scale="0" X1="0" Y1="0" X2="0" Y2="0" SelectionType="PerPixel">
+    <Position X="160" Y="160" />
+    <Event No="1" ScriptID="cEgo_Look" />
+    <Event No="2" ScriptID="cEgo_Interact" />
+    <Event No="3" ScriptID="cEgo_Talk" />
+    <WalkToX>0</WalkToX>
+    <WalkToY>0</WalkToY>
+    <InRoomID>Intro</InRoomID>
+    <EnableWalktoXYPoints>false</EnableWalktoXYPoints>
+    <ObjectScale>1</ObjectScale>
+    <MaxDialogueWidth>260</MaxDialogueWidth>
+    <DialogueYPosition>-10</DialogueYPosition>
+    <ViewWalkID>VIEW1</ViewWalkID>
+    <AdjustSpeedWithScaling>false</AdjustSpeedWithScaling>
+    <UniformMovementSpeed>true</UniformMovementSpeed>
+    <DiagonalMovement>true</DiagonalMovement>
+    <Baseline>0</Baseline>
+    <Visible>true</Visible>
+    <Colour R="255" G="255" B="255" A="255" />
+    <IsPlayer>true</IsPlayer>
+    <Direction>Down</Direction>
+    <WalkSpeed>3</WalkSpeed>
+    <AnimationDelay>4</AnimationDelay>
+    <SpeechAnimationDelay>5</SpeechAnimationDelay>
+    <DialogueColour R="252" G="84" B="84" A="255" />
+    <MovementLinkedToAnimation>true</MovementLinkedToAnimation>
+    <TurnBeforeWalking>true</TurnBeforeWalking>
+    <UseRoomAreaLighting>true</UseRoomAreaLighting>
+    <UseManualScaling>false</UseManualScaling>
+  </Character>
+  <Module>
+    <ScriptID>Collision</ScriptID>
+    <Scripts>
+      <Script ScriptID="test_ray_circle_2d" ParametersSignature="Unknown" />
+      <Script ScriptID="test_ray_capsule_2d" ParametersSignature="Unknown" />
+      <Script ScriptID="test_against_horizontal_bank" ParametersSignature="Unknown" />
+      <Script ScriptID="test_against_vertical_bank" ParametersSignature="Unknown" />
+    </Scripts>
+    <InstanceID>Collision</InstanceID>
+  </Module>
+  <Module>
+    <ScriptID>DrawAntialiased</ScriptID>
+    <Scripts>
+      <Script ScriptID="ipart" ParametersSignature="Unknown" />
+      <Script ScriptID="round" ParametersSignature="Unknown" />
+      <Script ScriptID="fpart" ParametersSignature="Unknown" />
+      <Script ScriptID="rfpart" ParametersSignature="Unknown" />
+      <Script ScriptID="plot" ParametersSignature="Unknown" />
+      <Script ScriptID="plotline" ParametersSignature="Unknown" />
+      <Script ScriptID="DrawAntialiasedLine" ParametersSignature="Unknown" />
+      <Script ScriptID="drawAntialiasedCircle" ParametersSignature="Unknown" />
+      <Script ScriptID="DrawAntialiasedCircle" ParametersSignature="Unknown" />
+      <Script ScriptID="DrawAntialiasedFilledCircle" ParametersSignature="Unknown" />
+      <Script ScriptID="DrawBox" ParametersSignature="Unknown" />
+    </Scripts>
+    <InstanceID>DrawAntialiased</InstanceID>
+  </Module>
+  <Module>
+    <ScriptID>Fade</ScriptID>
+    <Scripts>
+      <Script ScriptID="Fade" ParametersSignature="Unknown" />
+    </Scripts>
+    <InstanceID>Fade</InstanceID>
+  </Module>
+  <Module>
+    <ScriptID>Particles</ScriptID>
+    <Scripts>
+      <Script ScriptID="remove_from_list" ParametersSignature="Unknown" />
+      <Script ScriptID="add_to_freelist" ParametersSignature="Unknown" />
+      <Script ScriptID="add_to_usedlist" ParametersSignature="Unknown" />
+      <Script ScriptID="setup_particles" ParametersSignature="Unknown" />
+      <Script ScriptID="add_particle" ParametersSignature="Unknown" />
+      <Script ScriptID="update_particles" ParametersSignature="Unknown" />
+    </Scripts>
+    <InstanceID>Particles</InstanceID>
+  </Module>
+  <Module>
+    <ScriptID>PoolMechanics</ScriptID>
+    <Scripts>
+      <Script ScriptID="pool_set_num_players" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_set_num_ships" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_set_muted" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_place_ball" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_place_ship_at_cueball" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_place_ball_random" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_rack_em" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_reset" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_setup" ParametersSignature="Unknown" />
+      <Script ScriptID="DrawShipAt" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_create_explosion" ParametersSignature="Unknown" />
+      <Script ScriptID="ExplodeShip" ParametersSignature="Unknown" />
+      <Script ScriptID="DrawShip" ParametersSignature="Unknown" />
+      <Script ScriptID="DrawBanks" ParametersSignature="Unknown" />
+      <Script ScriptID="DrawPockets" ParametersSignature="Unknown" />
+      <Script ScriptID="steer_at" ParametersSignature="Unknown" />
+      <Script ScriptID="steer_avoid_balls" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_calc_best_pocket_simple" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_calc_best_pocket_moderate" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_calc_aim" ParametersSignature="Unknown" />
+      <Script ScriptID="choose_best_ball_closest" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_calc_best_ball_and_pocket_simple" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_calc_best_ball_and_pocket_moderate" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_calc_best_ball_and_pocket_complex" ParametersSignature="Unknown" />
+      <Script ScriptID="ReadShipInput" ParametersSignature="Unknown" />
+      <Script ScriptID="UpdateShipControl" ParametersSignature="Unknown" />
+      <Script ScriptID="draw_background" ParametersSignature="Unknown" />
+      <Script ScriptID="pool_update" ParametersSignature="Unknown" />
+    </Scripts>
+    <InstanceID>PoolMechanics</InstanceID>
+  </Module>
+  <Module>
+    <ScriptID>Random</ScriptID>
+    <Scripts>
+      <Script ScriptID="Random2_Seed" ParametersSignature="Unknown" />
+      <Script ScriptID="Random2" ParametersSignature="Unknown" />
+    </Scripts>
+    <InstanceID>RandomInstance</InstanceID>
+  </Module>
+  <Module>
+    <ScriptID>Replay</ScriptID>
+    <Scripts>
+      <Script ScriptID="replay_start" ParametersSignature="Unknown" />
+      <Script ScriptID="replay_get_best" ParametersSignature="Unknown" />
+      <Script ScriptID="replay_get_time" ParametersSignature="Unknown" />
+      <Script ScriptID="replay_start_replay" ParametersSignature="Unknown" />
+      <Script ScriptID="replay_save_input" ParametersSignature="Unknown" />
+      <Script ScriptID="replay_end" ParametersSignature="Unknown" />
+      <Script ScriptID="replay_exists" ParametersSignature="Unknown" />
+      <Script ScriptID="replay_get_left" ParametersSignature="Unknown" />
+      <Script ScriptID="replay_get_right" ParametersSignature="Unknown" />
+      <Script ScriptID="replay_get_thrust" ParametersSignature="Unknown" />
+      <Script ScriptID="replay_get_fire" ParametersSignature="Unknown" />
+      <Script ScriptID="replay_next_frame" ParametersSignature="Unknown" />
+    </Scripts>
+    <InstanceID>Replay</InstanceID>
+  </Module>
+  <Module>
+    <ScriptID>Ships</ScriptID>
+    <Scripts>
+      <Script ScriptID="ships_setup" ParametersSignature="Unknown" />
+      <Script ScriptID="ship_get_for_round" ParametersSignature="Unknown" />
+      <Script ScriptID="ship_get_name" ParametersSignature="Unknown" />
+      <Script ScriptID="ship_get_current_name" ParametersSignature="Unknown" />
+      <Script ScriptID="ship_get_current_bio" ParametersSignature="Unknown" />
+      <Script ScriptID="ship_get_current_index" ParametersSignature="Unknown" />
+      <Script ScriptID="ship_get_current_sprite" ParametersSignature="Unknown" />
+      <Script ScriptID="ship_load" ParametersSignature="Unknown" />
+      <Script ScriptID="ship_save" ParametersSignature="Unknown" />
+      <Script ScriptID="ship_draw" ParametersSignature="Unknown" />
+    </Scripts>
+    <InstanceID>Ships</InstanceID>
+  </Module>
+  <Module>
+    <ScriptID>Sounds</ScriptID>
+    <Scripts>
+      <Script ScriptID="PlaySoundSafe" ParametersSignature="Unknown" />
+      <Script ScriptID="PlaySoundSafePrio" ParametersSignature="Unknown" />
+    </Scripts>
+    <InstanceID>Sounds</InstanceID>
+  </Module>
+  <Module>
+    <ScriptID>TextMessage</ScriptID>
+    <Scripts>
+      <Script ScriptID="WriteTextMessage" ParametersSignature="Unknown" />
+      <Script ScriptID="WriteAliasedTextMessage" ParametersSignature="Unknown" />
+      <Script ScriptID="WriteTextMessageWrap" ParametersSignature="Unknown" />
+    </Scripts>
+    <InstanceID>TextMessage</InstanceID>
+  </Module>
+  <Module>
+    <ScriptID>Time</ScriptID>
+    <Scripts>
+      <Script ScriptID="get_time_string" ParametersSignature="Unknown" />
+    </Scripts>
+    <InstanceID>Time</InstanceID>
+  </Module>
+  <Module>
+    <ScriptID>VectorLetters</ScriptID>
+    <Scripts>
+      <Script ScriptID="Setup" ParametersSignature="Unknown" />
+      <Script ScriptID="DrawVectorText" ParametersSignature="Unknown" />
+      <Script ScriptID="DrawAntialiasedVectorText" ParametersSignature="Unknown" />
+    </Scripts>
+    <InstanceID>VectorLetters</InstanceID>
+  </Module>
+  <AudioClip IntID="1" ScriptID="aBallhit" RelativePath="Main" RelativeFileName="Main\aBallhit.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="3" />
+  <AudioClip IntID="2" ScriptID="aBallhit2" RelativePath="Main" RelativeFileName="Main\aBallhit2.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="3" />
+  <AudioClip IntID="3" ScriptID="aBallhit3" RelativePath="Main" RelativeFileName="Main\aBallhit3.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="3" />
+  <AudioClip IntID="4" ScriptID="aBallhit4" RelativePath="Main" RelativeFileName="Main\aBallhit4.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="3" />
+  <AudioClip IntID="5" ScriptID="aBallhit5" RelativePath="Main" RelativeFileName="Main\aBallhit5.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="3" />
+  <AudioClip IntID="6" ScriptID="aBallhit6" RelativePath="Main" RelativeFileName="Main\aBallhit6.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="3" />
+  <AudioClip IntID="20" ScriptID="aBeat1" RelativePath="Main" RelativeFileName="Main\aBeat1.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="1" />
+  <AudioClip IntID="21" ScriptID="aBeat2" RelativePath="Main" RelativeFileName="Main\aBeat2.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="1" />
+  <AudioClip IntID="9" ScriptID="aExplosion" RelativePath="Main" RelativeFileName="Main\aExplosion.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="3" />
+  <AudioClip IntID="10" ScriptID="aFloop" RelativePath="Main" RelativeFileName="Main\aFloop.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="1" />
+  <AudioClip IntID="25" ScriptID="aLIDPING" RelativePath="Main" RelativeFileName="Main\aLIDPING.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="1" />
+  <AudioClip IntID="13" ScriptID="aMsg" RelativePath="Main" RelativeFileName="Main\aMsg.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="1" />
+  <AudioClip IntID="7" ScriptID="aPocket" RelativePath="Main" RelativeFileName="Main\aPocket.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="3" />
+  <AudioClip IntID="8" ScriptID="aPocket2" RelativePath="Main" RelativeFileName="Main\aPocket2.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="3" />
+  <AudioClip IntID="22" ScriptID="aShot" RelativePath="Main" RelativeFileName="Main\aShot.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="1" />
+  <AudioClip IntID="23" ScriptID="aTeleport" RelativePath="Main" RelativeFileName="Main\aTeleport.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="1" />
+  <AudioClip IntID="11" ScriptID="aThrust1" RelativePath="Main" RelativeFileName="Main\aThrust1.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="True" TypeID="3" />
+  <AudioClip IntID="12" ScriptID="aThrust2" RelativePath="Main" RelativeFileName="Main\aThrust2.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="True" TypeID="3" />
+  <AudioClip IntID="15" ScriptID="aSPACCER" RelativePath="Music" RelativeFileName="Music\aSPACCER.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="2" />
+  <AudioClip IntID="16" ScriptID="aSPACPOL2" RelativePath="Music" RelativeFileName="Music\aSPACPOL2.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="2" />
+  <AudioClip IntID="17" ScriptID="aSPACPOOL" RelativePath="Music" RelativeFileName="Music\aSPACPOOL.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="2" />
+  <AudioClip IntID="18" ScriptID="aSPACTUT" RelativePath="Music" RelativeFileName="Music\aSPACTUT.ogg" DefaultVolume="-1" DefaultPriority="Inherit" DefaultRepeat="Inherit" TypeID="2" />
+  <AudioFolder RelativePath="Main" DefaultVolume="100" DefaultPriority="Normal" DefaultRepeat="False" DefaultTypeID="1" />
+  <AudioFolder RelativePath="Music" DefaultVolume="100" DefaultPriority="Inherit" DefaultRepeat="True" DefaultTypeID="2" />
+  <AudioFolder RelativePath="Sounds" DefaultVolume="100" DefaultPriority="Inherit" DefaultRepeat="False" DefaultTypeID="3" />
+  <AudioClipTypes TypeID="1" Name="Ambient Sound" MaxChannels="1" VolumeReductionWhileSpeechPlaying="0" CrossfadeClips="No" />
+  <AudioClipTypes TypeID="2" Name="Music" MaxChannels="1" VolumeReductionWhileSpeechPlaying="30" CrossfadeClips="No" />
+  <AudioClipTypes TypeID="3" Name="Sound" MaxChannels="0" VolumeReductionWhileSpeechPlaying="0" CrossfadeClips="No" />
+  <Font IntID="0" Name="Normal" StartCharacter="0" EndCharacter="128" Spacing="0" OutlineStyle="None" FontHeight="0" />
+  <Font IntID="1" Name="Speech" StartCharacter="0" EndCharacter="128" Spacing="0" OutlineFont="SpeechOutline" OutlineStyle="UseOutlineFont" FontHeight="0" />
+  <Font IntID="2" Name="SpeechOutline" StartCharacter="0" EndCharacter="128" Spacing="0" OutlineStyle="None" FontHeight="0" />
+  <Font IntID="3" Name="Notalot35.Regular.12" StartCharacter="0" EndCharacter="255" Spacing="0" OutlineStyle="None" FontHeight="0" />
+  <Font IntID="4" Name="pix Chicago.Regular.6" StartCharacter="0" EndCharacter="255" Spacing="0" OutlineStyle="None" FontHeight="0" />
+  <Font IntID="5" Name="Thintel.Regular.12" StartCharacter="0" EndCharacter="255" Spacing="0" OutlineStyle="None" FontHeight="0" />
+  <ScreenTransition>eTransitionInstant</ScreenTransition>
+</GameContent>

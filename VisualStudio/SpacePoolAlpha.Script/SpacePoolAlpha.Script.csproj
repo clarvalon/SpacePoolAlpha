@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <!-- Only run mpc.exe in Release mode -->
+  <ItemGroup Condition="'$(Configuration)' == 'Release' ">
+    <PackageReference Include="MessagePack.MSBuild.Tasks" Version="2.1.90" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Memory" Version="4.5.3" />
+  </ItemGroup>
+
+  <!-- Exclude pre-generated serialization classes in Debug mode (faster startup, slower runtime) -->
+  <ItemGroup Condition="'$(Configuration)' == 'Debug' ">
+    <Compile Remove="AutoGen\MessagePack\**" />
+    <EmbeddedResource Remove="AutoGen\MessagePack\**" />
+    <None Remove="AutoGen\MessagePack\**" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Reference Include="XAGE.Interface.Core">
+      <HintPath>..\DLLs\Desktop\Managed\Debug\XAGE.Interface.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack">
+      <HintPath>..\DLLs\Desktop\Managed\Debug\MessagePack.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack.Annotations">
+      <HintPath>..\DLLs\Desktop\Managed\Debug\MessagePack.Annotations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Reference Include="XAGE.Interface.Core">
+      <HintPath>..\DLLs\Desktop\Managed\Release\XAGE.Interface.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack">
+      <HintPath>..\DLLs\Desktop\Managed\Release\MessagePack.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack.Annotations">
+      <HintPath>..\DLLs\Desktop\Managed\Release\MessagePack.Annotations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Call code generator before-build - Release mode only -->
+  <Target Name="MessagePackGen" BeforeTargets="BeforeBuild" Condition="'$(Configuration)' == 'Release' ">
+    <!-- Configuration of Code-Generator -->
+    <MessagePackGenerator Input="$(ProjectPath)" Output="$(ProjectDir)AutoGen\MessagePack" ResolverName="ScriptResolver" UseMapMode="true" useMapMode="true" />
+  </Target>
+
+</Project>

@@ -1,0 +1,173 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+	<TieredCompilation>true</TieredCompilation>
+    <AssemblyName>SpacePoolAlpha</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETCOREAPP2_0</DefineConstants>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="DllMap.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="FNA.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpacePoolAlpha.Script\SpacePoolAlpha.Script.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="x64\" />
+    <Folder Include="x86\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Content\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\DLLs\Desktop\x64\FAudio.dll" Link="x64\FAudio.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\x64\libtheorafile.dll" Link="x64\libtheorafile.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\x64\MojoShader.dll" Link="x64\MojoShader.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\x64\SDL2.dll" Link="x64\SDL2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\x64\SDL2_image.dll" Link="x64\SDL2_image.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+	  <Content Include="..\DLLs\Desktop\x64\cimgui.dll" Link="x64\cimgui.dll">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  	</Content>	
+  </ItemGroup>
+
+  <ItemGroup>
+	  <Content Include="..\DLLs\Desktop\x86\FAudio.dll" Link="x86\FAudio.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\x86\libtheorafile.dll" Link="x86\libtheorafile.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\x86\MojoShader.dll" Link="x86\MojoShader.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\x86\SDL2.dll" Link="x86\SDL2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\x86\SDL2_image.dll" Link="x86\SDL2_image.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+	  <Content Include="..\DLLs\Desktop\x86\cimgui.dll" Link="x86\cimgui.dll">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  	</Content>	
+    
+    <Content Include="SpacePoolAlpha.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\DLLs\Desktop\osx\cimgui.dylib" Link="osx\cimgui.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\osx\libFAudio.0.dylib" Link="osx\libFAudio.0.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\osx\libmojoshader.dylib" Link="osx\libmojoshader.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\osx\libSDL2-2.0.0.dylib" Link="osx\libSDL2-2.0.0.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\osx\libSDL2_image-2.0.0.dylib" Link="osx\libSDL2_image-2.0.0.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\osx\libtheorafile.dylib" Link="osx\libtheorafile.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\DLLs\Desktop\lib64\cimgui.so" Link="lib64\cimgui.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\lib64\libFAudio.so.0" Link="lib64\libFAudio.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\lib64\libmojoshader.so" Link="lib64\libmojoshader.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\lib64\libSDL2-2.0.so.0" Link="lib64\libSDL2-2.0.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\lib64\libSDL2_image-2.0.so.0" Link="lib64\libSDL2_image-2.0.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\lib64\libtheorafile.so" Link="lib64\libtheorafile.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Reference Include="FNA">
+      <HintPath>..\DLLs\Desktop\Managed\Debug\FNA.dll</HintPath>
+    </Reference>
+    <Reference Include="XAGE.Engine.Core">
+      <HintPath>..\DLLs\Desktop\Managed\Debug\XAGE.Engine.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="XAGE.Interface.Core">
+      <HintPath>..\DLLs\Desktop\Managed\Debug\XAGE.Interface.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack">
+      <HintPath>..\DLLs\Desktop\Managed\Debug\MessagePack.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack.Annotations">
+      <HintPath>..\DLLs\Desktop\Managed\Debug\MessagePack.Annotations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Reference Include="FNA">
+      <HintPath>..\DLLs\Desktop\Managed\Release\FNA.dll</HintPath>
+    </Reference>
+    <Reference Include="XAGE.Engine.Core">
+      <HintPath>..\DLLs\Desktop\Managed\Release\XAGE.Engine.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="XAGE.Interface.Core">
+      <HintPath>..\DLLs\Desktop\Managed\Release\XAGE.Interface.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack">
+      <HintPath>..\DLLs\Desktop\Managed\Release\MessagePack.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack.Annotations">
+      <HintPath>..\DLLs\Desktop\Managed\Release\MessagePack.Annotations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Buffers" Version="4.4.0" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.4.0" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.4.0" />
+  </ItemGroup>
+
+</Project>

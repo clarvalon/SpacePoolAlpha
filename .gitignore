@@ -1,0 +1,293 @@
+# 
+#    ------  GIT VERSION CONTROL  ------
+#
+# This contains a list files & patterns that git should not version control in the repository
+#
+# Generally we want to track the following:
+#    * Code & supporting scaffolding (.cs .csproj .sln)
+#    * Configuration (.xml)
+#
+# And ignore the following:
+#    * Built assets (.zip)
+#    * Compiled binaries (*.exe *.dll)
+#    * Any user-specific or stray files (*.suo, *.orig)
+#  
+# You have several options when it comes to handling raw binary assets (.png .ogg etc):
+#
+#   1) Track these files in the repo as normal
+#        PROS:  Easiest option (just remove the '#' comments below as needed)
+#        CONS:  Repo may become very large if these files are repeatedly modified
+#
+#   2) Track these files in the repo but using the Large File Storage (LFS)
+#        PROS:  Desired files stored outside of repo, only retrieved on update - will prevent repo from growing too large
+#        CONS:  Must be connected to central repo in order to update.
+#
+#   3) Do not track inside repo - instead use another mechanism to periodically distribute
+#               e.g. periodically grab latest raw assets from shared dropbox
+#        PROS:  Repo will be prevented from growing too large
+#        CONS:  Assets need to be synced manually via seperate mechanism
+#
+# For smaller projects option 1 may be ok.  For larger projects, options 2 or 3 are recommended.
+#
+syntax: glob
+*/bin/*
+*/obj/*
+*/obj_core/*
+
+# To store raw assets in the repository, comment out these three lines
+#Content/Graphics/*
+#Content/Audio/*
+#Content/Voice/*
+
+Content/Game/*.DIFF.BEFORE.MSGP.xml
+Content/Game/*.DIFF.AFTER.MSGP.xml
+Content/Game/Game.xml
+Content/TemporaryFiles/*
+VisualStudio/*/Content/*
+VisualStudio/*/AutoGen/*
+VisualStudio/DLLs/
+AutoGen/*
+Publish/*
+*.TemporaryItems*
+*.DS_Store*
+*/_UpgradeReport*
+*.git/*
+*.svn/*
+*.vs/*
+*.vscode/*
+*.suo
+*.dll
+*.pdb
+*.user
+*.xap
+*.vb
+*.vbproj
+*.vsdisco
+*.vdproj
+*.userprefs
+*.vspx
+*.psess
+*.idc
+*.orig
+*.speccache
+*.protobuf
+*.msgp
+*.xbs
+.editorconfig
+Game.FULL.Bkp
+*.Dev.sln
+*.Dev.csproj
+
+# --------------- Standard .NET / C# entries below ------------------
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+# build folder is nowadays used for build scripts and should not be ignored
+#build/
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.log
+*.scc
+
+# OS generated files #
+.DS_Store*
+Icon?
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# Guidance Automation Toolkit
+*.gpState
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# TeamCity is a build add-in
+_TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+
+# Installshield output folder
+[Ee]xpress/
+
+# DocProject is a documentation generator add-in
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Click-Once directory
+publish/
+
+# Publish Web Output
+*.Publish.xml
+
+# Windows Azure Build Output
+csx
+*.build.csdef
+
+# Windows Store app package directory
+AppPackages/
+
+# Others
+*.Cache
+ClientBin/
+[Ss]tyle[Cc]op.*
+~$*
+*~
+*.dbmdl
+*.[Pp]ublish.xml
+*.pfx
+*.publishsettings
+modulesbin/
+tempbin/
+
+# EPiServer Site file (VPP)
+AppData/
+
+# RIA/Silverlight projects
+Generated_Code/
+
+# Backup & report files from converting an old project file to a newer
+# Visual Studio version. Backup files are not needed, because we have git ;-)
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+
+# vim
+*.txt~
+*.swp
+*.swo
+
+# Temp files when opening LibreOffice on ubuntu
+.~lock.*
+ 
+# svn
+.svn
+
+# CVS - Source Control
+**/CVS/
+
+# Remainings from resolving conflicts in Source Control
+*.orig
+
+# SQL Server files
+**/App_Data/*.mdf
+**/App_Data/*.ldf
+**/App_Data/*.sdf
+
+
+#LightSwitch generated files
+GeneratedArtifacts/
+_Pvt_Extensions/
+ModelManifest.xml
+
+# =========================
+# Windows detritus
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac desktop service store files
+.DS_Store
+
+# SASS Compiler cache
+.sass-cache
+
+# Visual Studio 2014 CTP
+**/*.sln.ide
+
+# Visual Studio temp something
+.vs/
+
+# dotnet stuff
+project.lock.json
+
+# VS 2015+
+*.vc.vc.opendb
+*.vc.db
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Output folder used by Webpack or other FE stuff
+**/node_modules/*
+**/wwwroot/*
+
+# SpecFlow specific
+*.feature.cs
+*.feature.xlsx.*
+*.Specs_*.html
