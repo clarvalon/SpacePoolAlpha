@@ -1,4 +1,4 @@
-# SpacePoolAlpha
+# Space Pool Alpha
 
 _An intergalactic arcade pool simulation.  Featuring time attack, tournament and two-player modes._
 
@@ -8,7 +8,7 @@ Programming and Game Design by [Steve McCrea](https://twitter.com/Kweepa).
 Portraits and victory screen by [AngelicCharon](https://www.adventuregamestudio.co.uk/forums/index.php?action=profile;u=9030).
 Music by [m0ds](https://www.adventuregamestudio.co.uk/forums/index.php?action=profile;u=16896).  
 Additional game design and testing by [bicilotti](https://www.adventuregamestudio.co.uk/forums/index.php?topic=33343.msg432375#msg432375).
-Port to XAGE by [Dan Alexander](https://twitter.com/Clarvalon)
+Port to XAGE by [Dan Alexander](https://twitter.com/Clarvalon).
 
 ## Prerequisites
 
