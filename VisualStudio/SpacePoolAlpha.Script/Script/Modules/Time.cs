@@ -23,7 +23,7 @@ namespace SpacePoolAlpha
             int seconds = (time / 40) - (60 * minutes);
             int tenths = (time - (40 * seconds) - (40 * 60 * minutes)) / 4;
 
-            String timeString = String.Format("%02d.%02d.%d", minutes, seconds, tenths);
+            String timeString = StringFormatAGS("%02d.%02d.%d", minutes, seconds, tenths);
 
             return timeString;
         }
