@@ -9,6 +9,7 @@ using System.Text;
 using System.Xml.Serialization;
 using MessagePack;
 using Clarvalon.XAGE.Global;
+using Microsoft.Xna.Framework.Input;
 
 namespace SpacePoolAlpha
 {
@@ -134,29 +135,63 @@ namespace SpacePoolAlpha
             {
                 if (key == eKeyDownArrow && currentMenuItem < 3)
                 {
-                    currentMenuItem += 1;
-                    aFloop.Play();
+                    MoveDown();
                 }
                 else if (key == eKeyUpArrow && currentMenuItem > 0)
                 {
-                    currentMenuItem -= 1;
-                    aFloop.Play();
+                    MoveUp();
                 }
                 else if (key == eKeyReturn)
                 {
-                    selectedMenuItem = currentMenuItem;
-                    int i = 0;
-                    while (i < 10)
-                    {
-                        float x = IntToFloat(110 + Random(100));
-                        float y = IntToFloat(35 + 40*selectedMenuItem + Random(10));
-                        pool_create_explosion(x, y, 0.0f, 0.0f, 8.0f, 10, Game.GetColorFromRGB(255, 255, 255));
-                        aPocket.Play();
-                        i += 1;
-                    }
-                    countdown = 50;
+                    Select();
                 }
             }
+        }
+
+        public override void ButtonPress(Buttons button)
+        {
+            if (selectedMenuItem == -1)
+            {
+                if ((button == Buttons.DPadDown || button == Buttons.LeftThumbstickDown) && currentMenuItem < 3)
+                {
+                    MoveDown();
+                }
+                else if ((button == Buttons.DPadUp || button == Buttons.LeftThumbstickUp) && currentMenuItem > 0)
+                {
+                    MoveUp();
+                }
+                else if (button == Buttons.A)
+                {
+                    Select();
+                }
+            }
+        }
+
+        private void MoveDown()
+        {
+            currentMenuItem += 1;
+            aFloop.Play();
+        }
+
+        private void MoveUp()
+        {
+            currentMenuItem -= 1;
+            aFloop.Play();
+        }
+
+        private void Select()
+        {
+            selectedMenuItem = currentMenuItem;
+            int i = 0;
+            while (i < 10)
+            {
+                float x = IntToFloat(110 + Random(100));
+                float y = IntToFloat(35 + 40 * selectedMenuItem + Random(10));
+                pool_create_explosion(x, y, 0.0f, 0.0f, 8.0f, 10, Game.GetColorFromRGB(255, 255, 255));
+                aPocket.Play();
+                i += 1;
+            }
+            countdown = 50;
         }
 
         public override void room_RepExec()

@@ -9,6 +9,7 @@ using System.Text;
 using System.Xml.Serialization;
 using MessagePack;
 using Clarvalon.XAGE.Global;
+using Microsoft.Xna.Framework.Input;
 
 namespace SpacePoolAlpha
 {
@@ -97,7 +98,7 @@ namespace SpacePoolAlpha
 
         public override void room_Load()
         {
-            Mouse.Visible = false;
+            mouse.Visible = false;
             stage = 1;
             load_sig("SIGSTEVE.DAT");
             ships_setup();
@@ -169,6 +170,14 @@ namespace SpacePoolAlpha
         public override void on_key_press(eKeyCode key)
         {
             if (key != eKeyCtrlX && fadeTime == -1)
+            {
+                fadeTime = 0;
+            }
+        }
+
+        public override void ButtonPress(Buttons button)
+        {
+            if ((button == Buttons.A || button == Buttons.Start) && fadeTime == -1)
             {
                 fadeTime = 0;
             }

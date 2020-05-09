@@ -47,13 +47,7 @@
     <Content Include="..\DLLs\Desktop\x64\libtheorafile.dll" Link="x64\libtheorafile.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\DLLs\Desktop\x64\MojoShader.dll" Link="x64\MojoShader.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="..\DLLs\Desktop\x64\SDL2.dll" Link="x64\SDL2.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\DLLs\Desktop\x64\SDL2_image.dll" Link="x64\SDL2_image.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
 	  <Content Include="..\DLLs\Desktop\x64\cimgui.dll" Link="x64\cimgui.dll">
@@ -68,13 +62,7 @@
     <Content Include="..\DLLs\Desktop\x86\libtheorafile.dll" Link="x86\libtheorafile.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\DLLs\Desktop\x86\MojoShader.dll" Link="x86\MojoShader.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="..\DLLs\Desktop\x86\SDL2.dll" Link="x86\SDL2.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\DLLs\Desktop\x86\SDL2_image.dll" Link="x86\SDL2_image.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
 	  <Content Include="..\DLLs\Desktop\x86\cimgui.dll" Link="x86\cimgui.dll">
@@ -93,13 +81,7 @@
     <Content Include="..\DLLs\Desktop\osx\libFAudio.0.dylib" Link="osx\libFAudio.0.dylib">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\DLLs\Desktop\osx\libmojoshader.dylib" Link="osx\libmojoshader.dylib">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="..\DLLs\Desktop\osx\libSDL2-2.0.0.dylib" Link="osx\libSDL2-2.0.0.dylib">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\DLLs\Desktop\osx\libSDL2_image-2.0.0.dylib" Link="osx\libSDL2_image-2.0.0.dylib">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="..\DLLs\Desktop\osx\libtheorafile.dylib" Link="osx\libtheorafile.dylib">
@@ -112,15 +94,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="..\DLLs\Desktop\lib64\libFAudio.so.0" Link="lib64\libFAudio.so.0">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\DLLs\Desktop\lib64\libmojoshader.so" Link="lib64\libmojoshader.so">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\DLLs\Desktop\lib64\libSDL2-2.0.so.0" Link="lib64\libSDL2-2.0.so.0">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\DLLs\Desktop\lib64\libSDL2_image-2.0.so.0" Link="lib64\libSDL2_image-2.0.so.0">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="..\DLLs\Desktop\lib64\libtheorafile.so" Link="lib64\libtheorafile.so">
@@ -165,6 +138,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="..\DLLs\Desktop\lib64\libFNA3D.so.0" Link="lib64\libFNA3D.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\lib64\libSDL2-2.0.so.0" Link="lib64\libSDL2-2.0.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\osx\libFNA3D.0.dylib" Link="osx\libFNA3D.0.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\x64\FNA3D.dll" Link="x64\FNA3D.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\DLLs\Desktop\x86\FNA3D.dll" Link="x86\FNA3D.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="SHIP0.DAT">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

@@ -107,8 +107,8 @@ public static class DllMap
         {
             MapDictionary = new Dictionary<string, string>();
             MapDictionary.Add("SDL2", "SDL2.dll");
-            MapDictionary.Add("SDL_image", "SDL_image.dll");
             MapDictionary.Add("FAudio", "FAudio.dll");
+            MapDictionary.Add("FNA3D", "FNA3D.dll");
         }
         else
         {

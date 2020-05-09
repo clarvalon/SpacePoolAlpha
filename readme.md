@@ -32,6 +32,12 @@ Port to XAGE by [Dan Alexander](https://twitter.com/Clarvalon).
 
 For more information, please see [here](https://clarvalon.com/documentation/gettingstarted).
 
+## Possible Improvements
+
+* 1st gamepad (simple support added, needs work).
+* 2nd gamepad support for two player (currently limited to two players on keyboard).
+* Leaderboards via IPlatformService (e.g. Xbox Live).
+
 ## Publishing
 
 To publish a standalone executable for easy distribution on Desktop platforms, navigate to the Publish directory and run the relevant .bat file.  These .bat files can be edited to fit your individual needs.  

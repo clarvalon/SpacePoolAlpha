@@ -50,7 +50,7 @@
       <Z>0</Z>
       <Over>false</Over>
       <Click>false</Click>
-      <Visibility>NormalButInitiallyOff</Visibility>
+      <PopupStyle>NormalButInitiallyOff</PopupStyle>
       <PopupYPos>0</PopupYPos>
       <NeverDrawBackground>false</NeverDrawBackground>
       <Alpha>255</Alpha>
@@ -61,7 +61,7 @@
           <Z>0</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -93,7 +93,7 @@
       <Z>0</Z>
       <Over>false</Over>
       <Click>false</Click>
-      <Visibility>PopupModal</Visibility>
+      <PopupStyle>PopupModal</PopupStyle>
       <PopupYPos>0</PopupYPos>
       <NeverDrawBackground>false</NeverDrawBackground>
       <Alpha>255</Alpha>
@@ -104,7 +104,7 @@
           <Z>0</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -127,7 +127,7 @@
           <Z>1</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -155,7 +155,7 @@
           <Z>2</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -192,7 +192,7 @@
       <Z>0</Z>
       <Over>false</Over>
       <Click>false</Click>
-      <Visibility>PopupModal</Visibility>
+      <PopupStyle>PopupModal</PopupStyle>
       <PopupYPos>0</PopupYPos>
       <NeverDrawBackground>false</NeverDrawBackground>
       <Alpha>255</Alpha>
@@ -203,7 +203,7 @@
           <Z>0</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -226,7 +226,7 @@
           <Z>0</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -246,7 +246,7 @@
           <Z>2</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -274,7 +274,7 @@
           <Z>3</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -302,7 +302,7 @@
           <Z>0</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -321,7 +321,7 @@
           <Z>5</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -358,7 +358,7 @@
       <Z>0</Z>
       <Over>false</Over>
       <Click>false</Click>
-      <Visibility>PopupModal</Visibility>
+      <PopupStyle>PopupModal</PopupStyle>
       <PopupYPos>0</PopupYPos>
       <NeverDrawBackground>false</NeverDrawBackground>
       <Alpha>255</Alpha>
@@ -369,7 +369,7 @@
           <Z>0</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -392,7 +392,7 @@
           <Z>1</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -420,7 +420,7 @@
           <Z>2</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -448,7 +448,7 @@
           <Z>0</Z>
           <Over>false</Over>
           <Click>false</Click>
-          <Visibility>Normal</Visibility>
+          <PopupStyle>Normal</PopupStyle>
           <PopupYPos>0</PopupYPos>
           <NeverDrawBackground>false</NeverDrawBackground>
           <Alpha>255</Alpha>
@@ -542,6 +542,7 @@
     <OnEveryFrame>room_RepExec</OnEveryFrame>
     <OnEveryFrameAlways>repeatedly_execute_always</OnEveryFrameAlways>
     <OnKeyPress>on_key_press</OnKeyPress>
+    <OnButtonPress>ButtonPress</OnButtonPress>
     <LeftEdgeX>0</LeftEdgeX>
     <RightEdgeX>317</RightEdgeX>
     <TopEdgeY>40</TopEdgeY>
@@ -552,6 +553,7 @@
     <Script ScriptID="repeatedly_execute_always" ParametersSignature="None" ReturnType="void" />
     <Script ScriptID="on_key_press" ParametersSignature="KeyCode" ReturnType="void" />
     <Script ScriptID="room_RepExec" ParametersSignature="None" />
+    <Script ScriptID="ButtonPress" ParametersSignature="Buttons" />
     <Width>320</Width>
     <Height>200</Height>
   </Room>
@@ -672,6 +674,7 @@
     <OnEveryFrame>room_RepExec</OnEveryFrame>
     <OnEveryFrameAlways>repeatedly_execute_always</OnEveryFrameAlways>
     <OnKeyPress>on_key_press</OnKeyPress>
+    <OnButtonPress>ButtonPress</OnButtonPress>
     <LeftEdgeX>0</LeftEdgeX>
     <RightEdgeX>317</RightEdgeX>
     <TopEdgeY>40</TopEdgeY>
@@ -682,6 +685,7 @@
     <Script ScriptID="repeatedly_execute_always" ParametersSignature="None" ReturnType="void" />
     <Script ScriptID="on_key_press" ParametersSignature="KeyCode" ReturnType="void" />
     <Script ScriptID="room_RepExec" ParametersSignature="None" />
+    <Script ScriptID="ButtonPress" ParametersSignature="Buttons" />
     <Object IntID="0" ScriptID="FadeOutObj" Name="" Enabled="true" Scale="0" X1="0" Y1="0" X2="0" Y2="0" SelectionType="PerPixel">
       <Position X="0" Y="200" />
       <Baseline>0</Baseline>

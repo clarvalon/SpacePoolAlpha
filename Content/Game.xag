@@ -13,6 +13,33 @@
   <GenerateUppercaseIntegralsInScripting>true</GenerateUppercaseIntegralsInScripting>
   <ResetWalkableAreasOnRoomChange>true</ResetWalkableAreasOnRoomChange>
   <UseHalfSizeCoords>false</UseHalfSizeCoords>
+  <ControllerSupport>Advanced</ControllerSupport>
+  <LeftThumbstickAction>None</LeftThumbstickAction>
+  <RightThumbstickAction>None</RightThumbstickAction>
+  <AButtonAction>None</AButtonAction>
+  <BButtonAction>None</BButtonAction>
+  <XButtonAction>None</XButtonAction>
+  <YButtonAction>None</YButtonAction>
+  <StartButtonAction>None</StartButtonAction>
+  <BackButtonAction>None</BackButtonAction>
+  <DPadUpButtonAction>None</DPadUpButtonAction>
+  <DPadDownButtonAction>None</DPadDownButtonAction>
+  <DPadLeftButtonAction>None</DPadLeftButtonAction>
+  <DPadRightButtonAction>None</DPadRightButtonAction>
+  <LeftShoulderButtonAction>None</LeftShoulderButtonAction>
+  <RightShoulderButtonAction>None</RightShoulderButtonAction>
+  <LeftTriggerButtonAction>None</LeftTriggerButtonAction>
+  <RightTriggerButtonAction>None</RightTriggerButtonAction>
+  <LeftThumbstickClickButtonAction>None</LeftThumbstickClickButtonAction>
+  <RightThumbstickClickButtonAction>None</RightThumbstickClickButtonAction>
+  <LeftThumbstickPushUpAction>None</LeftThumbstickPushUpAction>
+  <LeftThumbstickPushDownAction>None</LeftThumbstickPushDownAction>
+  <LeftThumbstickPushLeftAction>None</LeftThumbstickPushLeftAction>
+  <LeftThumbstickPushRightAction>None</LeftThumbstickPushRightAction>
+  <RightThumbstickPushUpAction>None</RightThumbstickPushUpAction>
+  <RightThumbstickPushDownAction>None</RightThumbstickPushDownAction>
+  <RightThumbstickPushLeftAction>None</RightThumbstickPushLeftAction>
+  <RightThumbstickPushRightAction>None</RightThumbstickPushRightAction>
   <UserSettings>
     <FullScreen>false</FullScreen>
     <CursorScrollSpeed>4.5</CursorScrollSpeed>
@@ -41,6 +68,18 @@
     <PlatformSettings>
       <Platform>[SCRIPT.PROJECT.GUID]</Platform>
       <GUID>F5126A2B-EE59-414D-9691-A204658D661B</GUID>
+    </PlatformSettings>
+    <PlatformSettings>
+      <Platform>[UWP.SOLUTION.GUID]</Platform>
+      <GUID>CCD78000-AE58-41E6-802D-5E6F8D4287CB</GUID>
+    </PlatformSettings>
+    <PlatformSettings>
+      <Platform>[UWP.SOLUTION2.GUID]</Platform>
+      <GUID>33949962-97F3-473D-AAA8-D795F4CAAFDB</GUID>
+    </PlatformSettings>
+    <PlatformSettings>
+      <Platform>[UWP.PROJECT.GUID]</Platform>
+      <GUID>47E1A4D6-58DE-4B98-8B20-C527BE8DA286</GUID>
     </PlatformSettings>
   </Platforms>
 </GameSettings>

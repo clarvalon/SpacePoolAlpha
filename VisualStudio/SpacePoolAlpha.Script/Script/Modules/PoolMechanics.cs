@@ -10,6 +10,7 @@ using System.Text;
 using System.Xml.Serialization;
 using MessagePack;
 using Clarvalon.XAGE.Global;
+using Microsoft.Xna.Framework.Input;
 
 namespace SpacePoolAlpha
 {
@@ -272,7 +273,7 @@ namespace SpacePoolAlpha
 
         public void pool_setup()
         {
-            Mouse.Visible = false;
+            mouse.Visible = false;
             haveSound = true;
             holdCueBall = false;
             bg = DynamicSprite.CreateFromBackground();
@@ -849,10 +850,20 @@ namespace SpacePoolAlpha
             }
             if (!ships[i].isComputer)
             {
-                ships[i].pleft = IsKeyPressed(ships[i].left);
-                ships[i].pright = IsKeyPressed(ships[i].right);
-                ships[i].pthrust = IsKeyPressed(ships[i].thrust);
-                ships[i].pfire = IsKeyPressed(ships[i].fire);
+                if (CurrentInputType == UserInputType.Controller)
+                {
+                    ships[i].pleft = IsButtonDown(Buttons.DPadLeft) || IsButtonDown(Buttons.LeftThumbstickLeft);
+                    ships[i].pright = IsButtonDown(Buttons.DPadRight) || IsButtonDown(Buttons.LeftThumbstickRight);
+                    ships[i].pthrust = IsButtonDown(Buttons.DPadUp) || IsButtonDown(Buttons.RightTrigger);
+                    ships[i].pfire = IsButtonDown(Buttons.A);
+                }
+                else
+                {
+                    ships[i].pleft = IsKeyPressed(ships[i].left);
+                    ships[i].pright = IsKeyPressed(ships[i].right);
+                    ships[i].pthrust = IsKeyPressed(ships[i].thrust);
+                    ships[i].pfire = IsKeyPressed(ships[i].fire);
+                }
             }
             int b = ships[i].ball;
             if (!balls[b].onTable || ships[i].disableControls > 0)

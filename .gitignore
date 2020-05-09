@@ -39,6 +39,9 @@ syntax: glob
 #Content/Audio/*
 #Content/Voice/*
 
+# Don't store UWP solution in the repo to keep things simple (normally you wouldn't want to do this)
+SpacePoolAlpha.UWP*
+
 Content/Game/*.DIFF.BEFORE.MSGP.xml
 Content/Game/*.DIFF.AFTER.MSGP.xml
 Content/Game/Game.xml

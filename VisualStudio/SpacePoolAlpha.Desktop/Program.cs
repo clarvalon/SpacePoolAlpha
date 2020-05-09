@@ -11,15 +11,17 @@ namespace XAGE_EXE
         public static bool AllowDebugging = true;
         public static int LogLevel = 0;
         public static bool LogAsync = true;
-        public static bool CatchFatalExceptions = true;
+        public static bool CatchEngineExceptions = true;
+        public static bool CatchScriptExceptions = true;
         public static NotImplementedAction OnNotImplemented = NotImplementedAction.Ignore;
 #else
         public static bool Release = false;
         public static bool AllowDebugging = true;
         public static int LogLevel = 0;
         public static bool LogAsync = false;
-        public static bool CatchFatalExceptions = false;
-        public static NotImplementedAction OnNotImplemented = NotImplementedAction.LogCsv;
+        public static bool CatchEngineExceptions = false;
+        public static bool CatchScriptExceptions = false;
+        public static NotImplementedAction OnNotImplemented = NotImplementedAction.Warn;
 #endif
 
         /// <summary>
@@ -27,17 +29,20 @@ namespace XAGE_EXE
         /// </summary>
         static void Main(string[] args)
         {
-            // Create Script Delegates that get injected into the engine
-            RunSettings runSettings = new RunSettings(
-                Release,
-                AllowDebugging,
-                LogLevel,
-                LogAsync,
-                OnNotImplemented,
-                SpacePoolAlpha.CSharpScript.Load,
-                SpacePoolAlpha.CSharpScript.Serialize,
-                SpacePoolAlpha.CSharpScript.Deserialize,
-                typeof(SpacePoolAlpha.CSharpScript));
+            // Settings that get injected into the engine
+            RunSettings runSettings = new RunSettings
+            (
+                release: Release,
+                allowDebugging: AllowDebugging,
+                logLevel: LogLevel,
+                logAsync: LogAsync,
+                onNotImplemented: OnNotImplemented,
+                catchScriptExceptions: CatchScriptExceptions,
+                loader: SpacePoolAlpha.CSharpScript.Load,
+                serializer: SpacePoolAlpha.CSharpScript.Serialize,
+                deserializer: SpacePoolAlpha.CSharpScript.Deserialize,
+                type: typeof(SpacePoolAlpha.CSharpScript)
+            );
 
             // Initialise DLL mapping and other pre-game items
             DllMap.Initialise();
@@ -51,7 +56,7 @@ namespace XAGE_EXE
                     game.Run();
                 }
             }
-            catch (Exception exc) when (CatchFatalExceptions)
+            catch (Exception exc) when (CatchEngineExceptions)
             {
                 Logger.Fatal("Unhandled exception: " + exc.Message);
                 Logger.Fatal("StackTrace: " + exc.StackTrace);
